@@ -39,8 +39,7 @@ chmod +x run.sh
 ./run.sh
 ```
 
-### Sample run
-![Sample run](screenshots/initialRun.png)
+[Sample run](screenshots/initialRun.png)
 
 ## Understanding the Test Structure
 
