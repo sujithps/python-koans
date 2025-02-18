@@ -14,6 +14,11 @@ In programming, koans are small lessons that teach language syntax and structure
 
 ### Installation
 1. Clone or download this repository
+
+```commandline
+  git clone git@github.com:sujithps/python-koans.git
+```
+
 2. Install required packages:
 ```bash
 pip install numpy pandas
@@ -33,6 +38,8 @@ Make the script executable and run:
 chmod +x run.sh
 ./run.sh
 ```
+
+[Sample run](screenshots/initialRun.png)
 
 ## Understanding the Test Structure
 
