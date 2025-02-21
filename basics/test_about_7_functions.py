@@ -6,8 +6,10 @@ class AboutFunctions(unittest.TestCase):
         """Learn about functions and return values"""
 
         def multiply_list(numbers, factor):
-            # Implement the function
-            pass
+            new_numbers = []
+            for number in numbers:
+                new_numbers.append(number * factor)
+            return new_numbers
 
         input_list = [1, 2, 3, 4]
         self.assertEqual([2, 4, 6, 8], multiply_list(input_list, 2))

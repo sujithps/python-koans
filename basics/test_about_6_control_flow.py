@@ -7,13 +7,13 @@ class AboutControlFlow(unittest.TestCase):
             result = 'true value'
         else:
             result = 'false value'
-        self.assertEqual(__, result)
+        self.assertEqual('true value', result)
 
     def test_if_then_statements(self):
         result = 'default value'
         if True:
             result = 'true value'
-        self.assertEqual(__, result)
+        self.assertEqual('true value', result)
 
     def test_if_then_elif_else_statements(self):
         if False:
@@ -22,22 +22,29 @@ class AboutControlFlow(unittest.TestCase):
             result = 'true value'
         else:
             result = 'default value'
-        self.assertEqual(__, result)
+        self.assertEqual('true value', result)
 
     def test_while_statement(self):
         i = 1
-        result = 1
-        while i <= 10:
-            result = result * i
+        result = 0
+        while i <= 5:
+            result = result + i
             i += 1
-        self.assertEqual(__, result)
+        self.assertEqual(15, result)
 
     def test_control_flow(self):
         """Learn about if statements and loops"""
 
         def get_grade(score):
-            # Implement the function
-            pass
+            if score>=95:
+                return "A"
+            elif score>=85:
+                return "B"
+            elif score>=75:
+                return "C"
+            elif score>60:
+                return "D"
+            else: return "F"
 
         self.assertEqual('A', get_grade(95))
         self.assertEqual('B', get_grade(85))
