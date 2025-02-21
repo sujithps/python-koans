@@ -26,9 +26,9 @@ class AboutControlFlow(unittest.TestCase):
 
     def test_while_statement(self):
         i = 1
-        result = 1
-        while i <= 10:
-            result = result * i
+        result = 0
+        while i <= 5:
+            result = result + i
             i += 1
         self.assertEqual(__, result)
 

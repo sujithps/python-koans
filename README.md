@@ -10,18 +10,12 @@ In programming, koans are small lessons that teach language syntax and structure
 ### Prerequisites
 - Python 3.6 or higher
 - Unittest module (comes with Python)
-- NumPy and Pandas (for advanced koans)
 
 ### Installation
 1. Clone or download this repository
 
 ```commandline
   git clone git@github.com:sujithps/python-koans.git
-```
-
-2. Install required packages:
-```bash
-pip install numpy pandas
 ```
 
 ### Running the Tests
@@ -55,9 +49,7 @@ basics/
     ├── test_about_4_numbers.py         # Number operations
     ├── test_about_5_control_flow.py    # Control flow
     ├── test_about_6_functions.py       # Functions
-    ├── test_about_7_comprehensions.py  # List comprehensions
-    ├── test_about_8_numpy.py           # NumPy basics
-    └── test_about_9_pandas.py          # Pandas basics
+    └── test_about_7_comprehensions.py  # List comprehensions
 ```
 
 ### How Koans Work

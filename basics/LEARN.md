@@ -9,8 +9,6 @@
 - [6. Control Flow](#6-control-flow)
 - [7. Functions](#7-functions)
 - [8. List Comprehensions](#8-list-comprehensions)
-- [9. NumPy Basics](#9-numpy-basics)
-- [10. Pandas Basics](#10-pandas-basics)
 
 ## 1. Numbers and Arithmetic
 
@@ -213,52 +211,6 @@ even_numbers = [x for x in numbers if x % 2 == 0]
 
 # Nested comprehension
 matrix = [[i+j for j in range(3)] for i in range(3)]
-```
-
-## 9. NumPy Basics
-
-### Array Operations
-```python
-import numpy as np
-
-# Create arrays
-arr = np.array([1, 2, 3])
-zeros = np.zeros(3)
-ones = np.ones((2, 2))
-
-# Array operations
-arr + 2          # Add to each element
-arr * 2          # Multiply each element
-np.sqrt(arr)     # Square root of each element
-
-# Statistics
-np.mean(arr)     # Average
-np.max(arr)      # Maximum value
-np.sum(arr)      # Sum of elements
-```
-
-## 10. Pandas Basics
-
-### DataFrame Operations
-```python
-import pandas as pd
-
-# Create DataFrame
-data = {
-    'name': ['Alice', 'Bob', 'Charlie'],
-    'age': [25, 30, 35]
-}
-df = pd.DataFrame(data)
-
-# Basic operations
-df['age'].mean()  # Average age
-df['age'].max()   # Maximum age
-
-# Filtering
-adult_df = df[df['age'] > 30]
-
-# Grouping
-df.groupby('category')['value'].mean()
 ```
 
 ## Learning Path and Tips

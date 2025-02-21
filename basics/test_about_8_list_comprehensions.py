@@ -14,6 +14,6 @@ class AboutListComprehensions(unittest.TestCase):
 
         words = ['hello', 'world', 'python', 'ai']
         long_words = __  # Words longer than 4 letters
-        self.assertEqual(['hello', 'python'], long_words)
+        self.assertEqual(['hello', 'world', 'python'], long_words)
 
 
